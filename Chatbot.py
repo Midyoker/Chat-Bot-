@@ -1,9 +1,7 @@
-# importing the required modules  
+
 from chatterbot import ChatBot  
 from chatterbot.trainers import ListTrainer  
 from chatterbot.trainers import ChatterBotCorpusTrainer  
-  
-# creating a chatbot  
 myBot = ChatBot(  
     name = 'Bunty',  
     read_only = True,  
