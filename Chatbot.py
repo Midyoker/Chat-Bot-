@@ -12,8 +12,6 @@ myBot = ChatBot(
         'chatterbot.logic.BestMatch'  
         ]  
         )  
-  
-# training the chatbot  
 small_convo = [  
     'Hello there!',  
     'Hi',  
@@ -29,7 +27,7 @@ small_convo = [
     'Not so good',  
     'Sorry to hear that.',  
     'What\'s your name?',  
-    ' I\'m Sakura. Ask me a math question, please.'  
+    ' I\'m Bunty. Ask me a math question, please.'  
     ]  
   
 math_convo_1 = [  
@@ -41,12 +39,8 @@ math_convo_2 = [
     'Law of Cosines',  
     'c**2 = a**2 + b**2 - 2*a*b*cos(gamma)'  
     ]  
-  
-# using the ListTrainer class  
 list_trainee = ListTrainer(myBot)  
 for i in (small_convo, math_convo_1, math_convo_2):  
-    list_trainee.train(i)  
-  
-# using the ChatterBotCorpusTrainer class  
+    list_trainee.train(i)   
 corpus_trainee = ChatterBotCorpusTrainer(myBot)  
 corpus_trainee.train('chatterbot.corpus.english')  
